@@ -1,0 +1,25 @@
+{
+  "name": "middle-class-map",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "site/start.js",
+  "scripts": {
+    "start": "sirv website --dev",
+    "lint": "eslint . --ext ts,tsx,js,jsx",
+    "format": "prettier --write '**/*.{ts,tsx,js,jsx,json}'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.28.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.0",
+    "point-in-polygon": "^1.1.0",
+    "prettier": "^2.8.0",
+    "sirv-cli": "^2.0.0"
+  }
+}

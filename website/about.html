@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Middle class map</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧐</text></svg>"
+    />
+    <meta
+      name="description"
+      content="This website combines and presents the location data for a number of popular middle class haunts, from trendy independent boutiques to salt of the earth farm shops."
+    />
+    <meta property="og:image" content="https://middleclassmap.co.uk/banner.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main id="about">
+      <h1>About</h1>
+      <p>
+        After reading about middle class city dwellers dreams of moving away from the pandemic
+        ridden streets in search of the good life in
+        <a
+          href="https://www.theguardian.com/uk-news/2020/jun/24/covid-19-sparks-exodus-of-middle-class-londoners-in-search-of-the-good-life"
+          target="_blank"
+          rel="noopener"
+          >The Guardian</a
+        >
+        and
+        <a
+          href="https://www.ft.com/content/7bc61b8c-9c2e-11ea-adb1-529f96d8a00b"
+          target="_blank"
+          rel="noopener"
+          >Financial Times</a
+        >
+        I thought it would be interesting to map out their potential destinations.
+      </p>
+      <p>
+        This website combines and presents the location data for a number of popular middle class
+        haunts, from trendy independent boutiques to salt of the earth farm shops. Data is presented
+        as a heatmap (with each point adjusted for population density) at low zoom levels and as a
+        pin board at high zoom levels.
+      </p>
+      <h2>The data</h2>
+      <p>
+        All data displayed on this website is in the public domain. The data was last updated on
+        <time>12/06/2022</time> and was extracted from the following sources:
+      </p>
+      <ul>
+        <li>
+          <a
+            href="https://guide.michelin.com/gb/en/restaurants/bib-gourmand"
+            target="_blank"
+            rel="noopener"
+            >Michelin Guide</a
+          >
+        </li>
+        <li>
+          <a href="https://www.cote.co.uk/directory/" target="_blank" rel="noopener"
+            >Côte Brasserie</a
+          >
+        </li>
+        <li>
+          <a href="http://www.fabulousfarmshops.co.uk/" target="_blank" rel="noopener"
+            >Fabulous Farm Shops</a
+          >
+        </li>
+        <li>
+          <a href="https://www.independentcinemaoffice.org.uk/" target="_blank" rel="noopener"
+            >Independent Cinema Office</a
+          >
+        </li>
+        <li>
+          <a href="https://www.johnlewis.com/our-shops" target="_blank" rel="noopener"
+            >John Lewis</a
+          >
+        </li>
+        <li>
+          <a href="https://www.jojomamanbebe.co.uk/stores" target="_blank" rel="noopener"
+            >JoJo Maman Bébé</a
+          >
+        </li>
+        <li>
+          <a href="https://www.rhs.org.uk/gardens/partner-gardens" target="_blank" rel="noopener"
+            >Royal Horticultural Society</a
+          >
+        </li>
+        <li>
+          <a href="https://www.spacenk.com/uk/en_GB/stores.html" target="_blank" rel="noopener"
+            >Space NK</a
+          >
+        </li>
+        <li>
+          <a href="https://www.nationaltrust.org.uk/search" target="_blank" rel="noopener"
+            >The National Trust</a
+          >
+        </li>
+        <li>
+          <a href="https://www.thewhitecompany.com/uk/our-stores/" target="_blank" rel="noopener"
+            >The White Company</a
+          >
+        </li>
+        <li>
+          <a href="https://www.trouva.com/boutiques/locations/GB" target="_blank" rel="noopener"
+            >Trouva</a
+          >
+        </li>
+      </ul>
+      <p>
+        Different techniques were used to scrape data from each source, primarily using a
+        combination of
+        <a href="https://www.npmjs.com/package/node-fetch" target="_blank" rel="noopener"
+          >Node Fetch</a
+        >,
+        <a href="https://www.npmjs.com/package/cheerio" target="_blank" rel="noopener">Cheerio</a>,
+        and
+        <a href="https://www.npmjs.com/package/puppeteer" target="_blank" rel="noopener"
+          >Puppeteer</a
+        >. Data scraped from websites without coordinates was geocoded using open postcode data from
+        <a href="https://www.getthedata.com/open-postcode-geo" target="_blank" rel="noopener"
+          >Get The Data</a
+        >.
+      </p>
+      <p><em>No websites were harmed in the making of this one.</em></p>
+      <p>
+        UK population data was kindly provided by the
+        <a href="https://www.ceh.ac.uk/" target="_blank" rel="noopener"
+          >UK Centre for Ecology &amp; Hydrology</a
+        >
+        and this dataset is freely available
+        <a
+          href="https://data.gov.uk/dataset/ca2daae8-8f36-4279-b15d-78b0463c61db/uk-gridded-population-2011-based-on-census-2011-and-land-cover-map-2015"
+          target="_blank"
+          rel="noopener"
+          >here</a
+        >. The dataset was integrated using the
+        <a href="https://github.com/chrisveness/geodesy" target="_blank" rel="noopener"
+          >Geodesy functions</a
+        >
+        published by Chris Veness.
+      </p>
+      <p>
+        The map itself is powered by
+        <a href="https://www.mapbox.com/" target="_blank" rel="noopener">Mapbox</a> and this website
+        is kindly hosted by
+        <a href="https://www.netlify.com/" target="_blank" rel="noopener">Netlify</a>.
+      </p>
+      <h2>Contact me</h2>
+      <form id="contact" method="post" name="contact" netlify>
+        <div>
+          <label for="contact-name">Name</label>
+          <input type="text" name="name" id="contact-name" required />
+        </div>
+        <div>
+          <label for="contact-email">Email address</label>
+          <input type="email" name="email" id="contact-email" required />
+        </div>
+        <div>
+          <label for="contact-message">Message</label>
+          <textarea name="message" id="contact-message" required></textarea>
+        </div>
+        <div>
+          <button type="submit">Send message</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
