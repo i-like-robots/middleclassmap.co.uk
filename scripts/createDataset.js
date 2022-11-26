@@ -4,7 +4,7 @@ const writeFile = require('./lib/writeFile')
 const getPopulation = require('./lib/getPopulation')
 const loadPopulationData = require('./lib/loadPopulationData')
 
-// The scripts that fetch and format the raw data are stored in a private repo.
+// The scripts used to fetch and format the raw data are stored in a private repo.
 // Although the data is all public - and scraping it is fair use - retrieving
 // some of it required a little more sleuthing than I feel comfortable sharing.
 const dataset = {
