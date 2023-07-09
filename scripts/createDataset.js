@@ -17,6 +17,7 @@ const dataset = {
   NATIONAL_TRUST: require('../../middleclassmap.co.uk-private/data/theNationalTrust.json'),
   RHS_PARTNER_GARDEN: require('../../middleclassmap.co.uk-private/data/rhsPartnerGardens.json'),
   SPACE_NK: require('../../middleclassmap.co.uk-private/data/spaceNK.json'),
+  SWEATY_BETTY: require('../../middleclassmap.co.uk-private/data/sweatyBetty.json'),
   THE_WHITE_COMPANY: require('../../middleclassmap.co.uk-private/data/theWhiteCompany.json'),
   TROUVA_BOUTIQUE: require('../../middleclassmap.co.uk-private/data/trouvaBoutiques.json'),
 }
