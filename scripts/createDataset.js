@@ -8,17 +8,17 @@ const loadPopulationData = require('./lib/loadPopulationData')
 // Although the data is all public - and scraping it is fair use - retrieving
 // some of it required a little more sleuthing than I feel comfortable sharing.
 const dataset = {
-  BIB_GOURMAND: require('../../raw/bibGourmand.json'),
-  COTE_BRASSERIE: require('../../raw/coteBrasserie.json'),
-  FARM_SHOP: require('../../raw/farmShops.json'),
-  INDEPENDENT_CINEMA: require('../../raw/independentCinemas.json'),
-  JOHN_LEWIS: require('../../raw/johnLewis.json'),
-  JOJO_MAMAN_BEBE: require('../../raw/jojoMamanBebe.json'),
-  NATIONAL_TRUST: require('../../raw/theNationalTrust.json'),
-  RHS_PARTNER_GARDEN: require('../../raw/rhsPartnerGardens.json'),
-  SPACE_NK: require('../../raw/spaceNK.json'),
-  THE_WHITE_COMPANY: require('../../raw/theWhiteCompany.json'),
-  TROUVA_BOUTIQUE: require('../../raw/trouvaBoutiques.json'),
+  BIB_GOURMAND: require('../../middleclassmap.co.uk-private/data/bibGourmand.json'),
+  COTE_BRASSERIE: require('../../middleclassmap.co.uk-private/data/coteBrasserie.json'),
+  FARM_SHOP: require('../../middleclassmap.co.uk-private/data/farmShops.json'),
+  INDEPENDENT_CINEMA: require('../../middleclassmap.co.uk-private/data/independentCinemas.json'),
+  JOHN_LEWIS: require('../../middleclassmap.co.uk-private/data/johnLewis.json'),
+  JOJO_MAMAN_BEBE: require('../../middleclassmap.co.uk-private/data/jojoMamanBebe.json'),
+  NATIONAL_TRUST: require('../../middleclassmap.co.uk-private/data/theNationalTrust.json'),
+  RHS_PARTNER_GARDEN: require('../../middleclassmap.co.uk-private/data/rhsPartnerGardens.json'),
+  SPACE_NK: require('../../middleclassmap.co.uk-private/data/spaceNK.json'),
+  THE_WHITE_COMPANY: require('../../middleclassmap.co.uk-private/data/theWhiteCompany.json'),
+  TROUVA_BOUTIQUE: require('../../middleclassmap.co.uk-private/data/trouvaBoutiques.json'),
 }
 
 function getPointWeight(population) {
