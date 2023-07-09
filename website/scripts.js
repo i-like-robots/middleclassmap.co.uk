@@ -8,6 +8,7 @@ const groupNames = {
   NATIONAL_TRUST: 'National Trust Property',
   RHS_PARTNER_GARDEN: 'RHS Partner Garden',
   SPACE_NK: 'Space NK',
+  SWEATY_BETTY: 'Sweaty Betty',
   THE_WHITE_COMPANY: 'The White Company',
   TROUVA_BOUTIQUE: 'Trouva Boutique',
 }
@@ -22,6 +23,7 @@ const showGroupName = {
   NATIONAL_TRUST: true,
   RHS_PARTNER_GARDEN: true,
   SPACE_NK: false,
+  SWEATY_BETTY: false,
   THE_WHITE_COMPANY: false,
   TROUVA_BOUTIQUE: true,
 }
@@ -45,13 +47,14 @@ const groupSortOrder = {
   TROUVA_BOUTIQUE: 1,
   BIB_GOURMAND: 2,
   THE_WHITE_COMPANY: 3,
-  SPACE_NK: 4,
-  JOJO_MAMAN_BEBE: 5,
-  INDEPENDENT_CINEMA: 6,
-  COTE_BRASSERIE: 7,
-  RHS_PARTNER_GARDEN: 8,
-  NATIONAL_TRUST: 9,
-  FARM_SHOP: 10,
+  SWEATY_BETTY: 4,
+  SPACE_NK: 5,
+  JOJO_MAMAN_BEBE: 6,
+  INDEPENDENT_CINEMA: 7,
+  COTE_BRASSERIE: 8,
+  RHS_PARTNER_GARDEN: 9,
+  NATIONAL_TRUST: 10,
+  FARM_SHOP: 11,
 }
 
 const groupImages = {
@@ -64,6 +67,7 @@ const groupImages = {
   NATIONAL_TRUST: 'nationaltrust.png',
   RHS_PARTNER_GARDEN: 'rhs.png',
   SPACE_NK: 'spacenk.png',
+  SWEATY_BETTY: 'sweatybetty.png',
   THE_WHITE_COMPANY: 'whitecompany.png',
   TROUVA_BOUTIQUE: 'trouva.png',
 }
