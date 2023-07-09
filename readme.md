@@ -21,6 +21,7 @@ All data displayed on this website is in the public domain and was extracted fro
 - [JoJo Maman Bébé](https://www.jojomamanbebe.co.uk/stores)
 - [Royal Horticultural Society](https://www.rhs.org.uk/gardens/partner-gardens)
 - [Space NK](https://www.spacenk.com/uk/en_GB/stores.html)
+- [Sweaty Betty](https://www.sweatybetty.com/shop-finder)
 - [The National Trust](https://www.nationaltrust.org.uk/search)
 - [The White Company](https://www.thewhitecompany.com/uk/our-stores/)
 - [Trouva](https://www.trouva.com/boutiques/locations/GB)
