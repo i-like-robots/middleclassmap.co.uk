@@ -174,6 +174,7 @@ map.on('load', function () {
       'icon-size': 0.1,
       'icon-image': ['get', 'group'],
       'icon-padding': 0,
+      'icon-allow-overlap': true,
       'symbol-sort-key': ['get', ['get', 'group'], ['literal', groupSortOrder]],
     },
   })
