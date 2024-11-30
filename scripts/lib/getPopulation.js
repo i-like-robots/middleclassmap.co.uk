@@ -17,7 +17,7 @@ function total(easting, northing, dataset) {
     dataset.slice(northing - BOUND, northing + BOUND).map((cols) => {
       const items = cols.slice(easting - BOUND, easting + BOUND)
       return sum(items)
-    })
+    }),
   )
 }
 

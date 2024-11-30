@@ -187,8 +187,8 @@ map.on('load', function () {
       <p>
         ${showGroupName[group] ? `<em>${groupNames[group]}</em><br>` : ''}
         <a href="${url}" target="_blank" rel="noopener">${
-      showGroupName[group] ? name : groupNames[group]
-    }</a>
+          showGroupName[group] ? name : groupNames[group]
+        }</a>
       </p>
     `
 

@@ -895,8 +895,8 @@ class LatLonEllipsoidal {
     const ellipsoid = this.datum
       ? this.datum.ellipsoid
       : this.referenceFrame
-      ? this.referenceFrame.ellipsoid
-      : ellipsoids$1.WGS84
+        ? this.referenceFrame.ellipsoid
+        : ellipsoids$1.WGS84
 
     const φ = this.lat.toRadians()
     const λ = this.lon.toRadians()
@@ -1373,7 +1373,7 @@ class Cartesian_Datum extends Cartesian {
   toLatLon(deprecatedDatum = undefined) {
     if (deprecatedDatum) {
       console.info(
-        'datum parameter to Cartesian_Datum.toLatLon is deprecated: set datum before calling toLatLon()'
+        'datum parameter to Cartesian_Datum.toLatLon is deprecated: set datum before calling toLatLon()',
       )
       this.datum = deprecatedDatum
     }
@@ -1598,7 +1598,7 @@ class OsGridRef {
       φ.toDegrees(),
       λ.toDegrees(),
       0,
-      LatLonEllipsoidal_Datum.datums.OSGB36
+      LatLonEllipsoidal_Datum.datums.OSGB36,
     )
 
     if (datum != LatLonEllipsoidal_Datum.datums.OSGB36) {
@@ -1798,7 +1798,7 @@ class LatLon_OsGridRef extends LatLonEllipsoidal_Datum {
       return new OsGridRef(E, N) // note: gets truncated to SW corner of 1m grid square
     } catch (e) {
       throw new Error(
-        `${e.message} from (${point.lat.toFixed(6)},${point.lon.toFixed(6)}).toOsGrid()`
+        `${e.message} from (${point.lat.toFixed(6)},${point.lon.toFixed(6)}).toOsGrid()`,
       )
     }
   }

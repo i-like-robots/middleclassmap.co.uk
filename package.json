@@ -5,10 +5,11 @@
   "description": "",
   "main": "site/start.js",
   "scripts": {
-    "start": "sirv website --dev",
+    "dev": "sirv website --dev",
     "build": "node scripts/createDataset.js",
-    "lint": "eslint . --ext ts,tsx,js,jsx",
-    "format": "prettier --write '**/*.{ts,tsx,js,jsx,json}'",
+    "lint": "eslint . --ext js,jsx",
+    "format": "prettier --write '**/*.{js,jsx,json}'",
+    "verify": "npm run lint && npm run format  -- --check",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install"
   },
@@ -20,7 +21,7 @@
     "husky": "^8.0.0",
     "lint-staged": "^13.0.0",
     "point-in-polygon": "^1.1.0",
-    "prettier": "^2.8.0",
+    "prettier": "^3.4.0",
     "sirv-cli": "^2.0.0"
   },
   "engines": {
