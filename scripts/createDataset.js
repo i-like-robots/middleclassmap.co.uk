@@ -45,7 +45,7 @@ async function run() {
       const point = [item.longitude, item.latitude]
 
       if (isInUK(point)) {
-        const pop = getPopulation(point, population)
+        const pop = await getPopulation(point, population)
 
         data.features.push({
           type: 'Feature',

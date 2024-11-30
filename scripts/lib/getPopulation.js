@@ -1,5 +1,3 @@
-const { LatLon } = require('../vendor/geodesy')
-
 const ADJUST_X = 4
 const ADJUST_Y = 6
 
@@ -21,7 +19,9 @@ function total(easting, northing, dataset) {
   )
 }
 
-module.exports = function getPopulation(point, dataset) {
+module.exports = async function getPopulation(point, dataset) {
+  const { LatLon } = await import('geodesy/osgridref.js')
+
   const wgs84 = new LatLon(point[1], point[0])
   const gridRef = wgs84.toOsGrid()
 
