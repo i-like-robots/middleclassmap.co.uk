@@ -30,6 +30,6 @@ Different techniques were used to scrape data from each source, primarily using 
 
 _No websites were harmed in the making of this one._
 
-UK population data was provided by the [UK Centre for Ecology & Hydrology](https://www.ceh.ac.uk/) and this dataset is freely available [here](https://data.gov.uk/dataset/ca2daae8-8f36-4279-b15d-78b0463c61db/uk-gridded-population-2011-based-on-census-2011-and-land-cover-map-2015). The dataset was integrated using the [Geodesy functions](https://github.com/chrisveness/geodesy) published by Chris Veness.
+UK population data was provided by the [UK Centre for Ecology & Hydrology](https://www.ceh.ac.uk/) and this dataset is freely available [here](https://data.gov.uk/dataset/ca2daae8-8f36-4279-b15d-78b0463c61db/uk-gridded-population-2011-based-on-census-2011-and-land-cover-map-2015). The dataset was integrated using the [Geodesy library](https://github.com/chrisveness/geodesy) published by Chris Veness.
 
-The map itself is powered by [Mapbox](https://www.mapbox.com/) and the website is kindly hosted by [Netlify](https://www.netlify.com/).
+The map itself is powered by [Mapbox](https://www.mapbox.com/).
