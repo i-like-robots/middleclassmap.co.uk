@@ -1,0 +1,333 @@
+html,
+body {
+  height: 100%;
+
+  /* All colours are taken from the Farrow & Ball paint range... */
+  --color-active: #7cae72;
+  --color-inactive: #b64f48;
+  --color-link: #6a90b4;
+  --color-link-alt: #599ec4;
+  --color-background: #fbf8f4;
+  --color-text: #41404c;
+  --color-text-alt: #586768;
+  --color-separator: #ccd0cd;
+
+  /* Gill sans is the font used by John Lewis */
+  --font-stack-headings: 'Gill Sans', 'Gill Sans MT', Frutiger, 'Frutiger Linotype', 'Myriad Pro',
+    Myriad, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-stack-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue',
+    sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-stack-body);
+  font-size: 16px;
+  line-height: 1.4;
+  text-rendering: optimizeLegibility;
+  color: var(--color-text);
+  background: var(--color-background);
+}
+
+h1,
+h2 {
+  font-weight: 200;
+  font-family: var(--font-stack-headings);
+  color: var(--color-text-alt);
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+a {
+  color: var(--color-link);
+  transition: color 0.25s ease;
+}
+
+a:hover,
+a:focus {
+  color: var(--color-link-alt);
+  text-decoration-skip-ink: all;
+}
+
+/**
+ * Page layout
+ */
+
+#layout {
+  position: relative;
+}
+
+#map {
+  height: 70vh;
+}
+
+#sidebar {
+  box-sizing: border-box;
+  padding: 10px;
+  border-top: 4px solid;
+}
+
+@media screen and (min-width: 760px) {
+  #layout {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto 275px;
+  }
+
+  #map,
+  #sidebar {
+    height: 100%;
+  }
+
+  #sidebar {
+    border-top: 0;
+    border-left: 4px solid;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    scrollbar-color: rgba(0, 0, 0, 0.25) transparent;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #layout {
+    grid-template-columns: auto 360px;
+  }
+
+  #sidebar {
+    padding: 20px;
+  }
+}
+
+/**
+ * Introduction
+ */
+
+#intro {
+  margin-bottom: 20px;
+}
+
+#intro h1 {
+  margin: 0;
+  color: inherit;
+}
+
+#intro p {
+  margin: 0;
+  font-weight: 200;
+  font-family: var(--font-stack-headings);
+  font-size: 18px;
+  color: var(--color-text-alt);
+}
+
+@media screen and (min-width: 1200px) {
+  #intro {
+    margin-bottom: 30px;
+  }
+
+  #intro p {
+    font-size: 20px;
+  }
+}
+
+/**
+ * Menu
+ */
+
+#menu {
+}
+
+#menu p {
+  font-size: 13px;
+}
+
+#menu .show {
+  color: var(--color-active);
+}
+
+#menu .hide {
+  color: var(--color-inactive);
+}
+
+#menu div {
+  display: flex;
+  padding: 12px 0;
+  border-top: 1px solid var(--color-separator);
+  font-size: 14px;
+  font-weight: 500;
+  align-items: center;
+}
+
+#menu div:last-child {
+  border-bottom: 1px solid var(--color-separator);
+}
+
+#menu button {
+  box-sizing: content-box;
+  position: relative;
+  display: block;
+  flex-shrink: 0;
+  width: 4em;
+  height: 2em;
+  border: 0;
+  border-radius: 2em;
+  margin-left: auto;
+  padding: 2px;
+  background: var(--color-inactive);
+  transition: background 0.25s ease;
+}
+
+#menu button::after {
+  content: '';
+  position: relative;
+  display: block;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  border-radius: 100%;
+  background: #fff;
+  transition: left 0.25s ease;
+}
+
+#menu button[aria-pressed='true'] {
+  background: var(--color-active);
+  background: var(--color-active);
+}
+
+#menu button[aria-pressed='true']::after {
+  left: 50%;
+}
+
+/**
+ * Footer
+ */
+
+#footer {
+  margin: 30px 0;
+}
+
+#footer p {
+  font-size: 13px;
+}
+
+/**
+ * Map pop-ups
+ */
+
+.mapboxgl-popup-content {
+  padding: 20px;
+}
+
+.mapboxgl-popup-content p {
+  margin: 4px 0;
+  font-family: var(--font-stack-body);
+  font-size: 14px;
+}
+
+.mapboxgl-popup-content em {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.mapboxgl-popup-close-button {
+  font-size: 18px;
+}
+
+.mapboxgl-popup-close-button:hover,
+.mapboxgl-popup-close-button:focus {
+  color: var(--color-link);
+  background: none;
+}
+
+/**
+ * About page
+ */
+
+#about {
+  margin: 0 10px;
+  padding: 20px;
+  background: white;
+}
+
+#about h1 {
+  margin: 0 0 8px;
+}
+
+#about h2 {
+  margin-top: 40px;
+  color: var(--color-text-alt);
+}
+
+#about li {
+  margin: 4px 0;
+}
+
+#about > * + * {
+  margin: 0 0 20px;
+}
+
+@media screen and (min-width: 760px) {
+  #about {
+    max-width: 36em;
+    margin: 0 auto;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #about {
+    padding: 60px;
+  }
+}
+
+/**
+ * Contact form
+ */
+
+#contact {
+}
+
+#contact div {
+  display: flex;
+  margin: 0 0 20px;
+}
+
+#contact label {
+  width: 8em;
+  padding: 5px 0;
+  margin-right: 1em;
+  text-align: right;
+}
+
+#contact input,
+#contact textarea {
+  flex-grow: 1;
+  padding: 4px;
+  border: 1px solid var(--color-separator);
+  font: inherit;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  border-color: var(--color-text-alt);
+}
+
+#contact button {
+  padding: 8px 12px;
+  margin-left: 9em;
+  border: 0;
+  font: inherit;
+  background: var(--color-link);
+  color: white;
+}
+
+#contact button:hover,
+#contact button:active {
+  background: var(--color-link-alt);
+}
