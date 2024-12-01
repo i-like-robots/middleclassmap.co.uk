@@ -8,12 +8,12 @@ const loadPopulationData = require('./lib/loadPopulationData')
 // Although the data is all public - and scraping it is fair use - retrieving
 // some of it required a little more sleuthing than I feel comfortable sharing.
 const dataset = {
-  BIB_GOURMAND: require('../../middleclassmap.co.uk-private/data/bibGourmand.json'),
   COTE_BRASSERIE: require('../../middleclassmap.co.uk-private/data/coteBrasserie.json'),
   FARM_SHOP: require('../../middleclassmap.co.uk-private/data/farmShops.json'),
   INDEPENDENT_CINEMA: require('../../middleclassmap.co.uk-private/data/independentCinemas.json'),
   JOHN_LEWIS: require('../../middleclassmap.co.uk-private/data/johnLewis.json'),
   JOJO_MAMAN_BEBE: require('../../middleclassmap.co.uk-private/data/jojoMamanBebe.json'),
+  MICHELIN_AWARD: require('../../middleclassmap.co.uk-private/data/bibGourmand.json'),
   NATIONAL_TRUST: require('../../middleclassmap.co.uk-private/data/theNationalTrust.json'),
   RHS_PARTNER_GARDEN: require('../../middleclassmap.co.uk-private/data/rhsPartnerGardens.json'),
   SPACE_NK: require('../../middleclassmap.co.uk-private/data/spaceNK.json'),

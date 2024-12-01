@@ -13,7 +13,7 @@ This website combines and presents the location data for a number of popular mid
 
 All data displayed on this website is in the public domain and was extracted from the following sources:
 
-- [Michelin Guide](https://guide.michelin.com/gb/en/restaurants/bib-gourmand)
+- [Michelin Guide](https://guide.michelin.com/gb/en/restaurants)
 - [Côte Brasserie](https://www.cote.co.uk/directory/)
 - [Fabulous Farm Shops](http://www.fabulousfarmshops.co.uk/)
 - [Independent Cinema Office](https://www.independentcinemaoffice.org.uk/)
@@ -26,7 +26,7 @@ All data displayed on this website is in the public domain and was extracted fro
 - [The White Company](https://www.thewhitecompany.com/uk/our-stores/)
 - [Trouva](https://www.trouva.com/boutiques/locations/GB)
 
-Different techniques were used to scrape data from each source, primarily using a combination of [Node Fetch](https://www.npmjs.com/package/node-fetch), [Cheerio](https://www.npmjs.com/package/cheerio), and [Puppeteer](https://www.npmjs.com/package/puppeteer). Data scraped from websites without coordinates was geocoded using open postcode data from [Get The Data](https://www.getthedata.com/open-postcode-geo). The scripts used to fetch and format the raw data are stored in a private repo because retrieving some of it required a little more sleuthing than I feel comfortable sharing.
+Different techniques were used to scrape data from each source, primarily using a combination of [Node](https://nodejs.org/), [Cheerio](https://www.npmjs.com/package/cheerio), and [Puppeteer](https://www.npmjs.com/package/puppeteer). Data scraped from websites without coordinates was geocoded using open postcode data from [Get The Data](https://www.getthedata.com/open-postcode-geo). The scripts used to fetch and format the raw data are stored in a private repo because retrieving some of it required a little more sleuthing than I feel comfortable sharing.
 
 _No websites were harmed in the making of this one._
 
