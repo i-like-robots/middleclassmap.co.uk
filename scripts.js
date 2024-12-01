@@ -1,10 +1,10 @@
 const groupNames = {
-  BIB_GOURMAND: 'Restaurant with a Bib Gourmand',
   COTE_BRASSERIE: 'Côte Brasserie',
   FARM_SHOP: 'Farm Shop',
   INDEPENDENT_CINEMA: 'Independent Cinema',
   JOHN_LEWIS: 'John Lewis',
   JOJO_MAMAN_BEBE: 'JoJo Maman Bébé',
+  MICHELIN_AWARD: 'Restaurant with Michelin Award',
   NATIONAL_TRUST: 'National Trust Property',
   RHS_PARTNER_GARDEN: 'RHS Partner Garden',
   SPACE_NK: 'Space NK',
@@ -14,12 +14,12 @@ const groupNames = {
 }
 
 const showGroupName = {
-  BIB_GOURMAND: true,
   COTE_BRASSERIE: false,
   FARM_SHOP: true,
   INDEPENDENT_CINEMA: true,
   JOHN_LEWIS: false,
   JOJO_MAMAN_BEBE: false,
+  MICHELIN_AWARD: true,
   NATIONAL_TRUST: true,
   RHS_PARTNER_GARDEN: true,
   SPACE_NK: false,
@@ -29,12 +29,12 @@ const showGroupName = {
 }
 
 // const groupWeights = {
-//   BIB_GOURMAND: 0.8,
 //   COTE_BRASSERIE: 0.5,
 //   FARM_SHOP: 0.4,
 //   INDEPENDENT_CINEMA: 0.6,
 //   JOHN_LEWIS: 1,
 //   JOJO_MAMAN_BEBE: 0.6,
+//   MICHELIN_AWARD: 0.8,
 //   NATIONAL_TRUST: 0.5,
 //   RHS_PARTNER_GARDEN: 0.5,
 //   SPACE_NK: 0.6,
@@ -45,12 +45,12 @@ const showGroupName = {
 const groupSortOrder = {
   JOHN_LEWIS: 0,
   TROUVA_BOUTIQUE: 1,
-  BIB_GOURMAND: 2,
   THE_WHITE_COMPANY: 3,
   SWEATY_BETTY: 4,
   SPACE_NK: 5,
   JOJO_MAMAN_BEBE: 6,
   INDEPENDENT_CINEMA: 7,
+  MICHELIN_AWARD: 2,
   COTE_BRASSERIE: 8,
   RHS_PARTNER_GARDEN: 9,
   NATIONAL_TRUST: 10,
@@ -58,12 +58,12 @@ const groupSortOrder = {
 }
 
 const groupImages = {
-  BIB_GOURMAND: 'bib.png',
   COTE_BRASSERIE: 'cote.png',
   FARM_SHOP: 'farm.png',
   INDEPENDENT_CINEMA: 'ico.png',
   JOHN_LEWIS: 'johnlewis.png',
   JOJO_MAMAN_BEBE: 'jojo.png',
+  MICHELIN_AWARD: 'bib.png',
   NATIONAL_TRUST: 'nationaltrust.png',
   RHS_PARTNER_GARDEN: 'rhs.png',
   SPACE_NK: 'spacenk.png',

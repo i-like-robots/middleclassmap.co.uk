@@ -46,12 +46,12 @@
       <h2>The data</h2>
       <p>
         All data displayed on this website is in the public domain. The data was last updated on
-        <time>30/11/2024</time> and was extracted from the following sources:
+        <time>01/12/2024</time> and was extracted from the following sources:
       </p>
       <ul>
         <li>
           <a
-            href="https://guide.michelin.com/gb/en/restaurants/bib-gourmand"
+            href="https://guide.michelin.com/gb/en/restaurants/"
             target="_blank"
             rel="noopener"
             >Michelin Guide</a
@@ -116,8 +116,8 @@
       <p>
         Different techniques were used to scrape data from each source, primarily using a
         combination of
-        <a href="https://www.npmjs.com/package/node-fetch" target="_blank" rel="noopener"
-          >Node Fetch</a
+        <a href="https://nodejs.org/" target="_blank" rel="noopener"
+          >Node</a
         >,
         <a href="https://www.npmjs.com/package/cheerio" target="_blank" rel="noopener">Cheerio</a>,
         and
@@ -150,24 +150,6 @@
         The map itself is powered by
         <a href="https://www.mapbox.com/" target="_blank" rel="noopener">Mapbox</a>.
       </p>
-      <h2>Contact me</h2>
-      <form id="contact" method="post" name="contact" netlify>
-        <div>
-          <label for="contact-name">Name</label>
-          <input type="text" name="name" id="contact-name" required />
-        </div>
-        <div>
-          <label for="contact-email">Email address</label>
-          <input type="email" name="email" id="contact-email" required />
-        </div>
-        <div>
-          <label for="contact-message">Message</label>
-          <textarea name="message" id="contact-message" required></textarea>
-        </div>
-        <div>
-          <button type="submit">Send message</button>
-        </div>
-      </form>
     </main>
   </body>
 </html>
