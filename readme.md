@@ -26,7 +26,7 @@ All data displayed on this website is in the public domain and was extracted fro
 - [The White Company](https://www.thewhitecompany.com/uk/our-stores/)
 - [Trouva](https://www.trouva.com/boutiques/locations/GB)
 
-Different techniques were used to scrape data from each source, primarily using a combination of [Node](https://nodejs.org/), [Cheerio](https://www.npmjs.com/package/cheerio), and [Puppeteer](https://www.npmjs.com/package/puppeteer). Data scraped from websites without coordinates was geocoded using open postcode data from [Get The Data](https://www.getthedata.com/open-postcode-geo). The scripts used to fetch and format the raw data are stored in a private repo because retrieving some of it required a little more sleuthing than I feel comfortable sharing.
+Different techniques were used to scrape data from each source, primarily using a combination of [Node](https://nodejs.org/), [Cheerio](https://www.npmjs.com/package/cheerio), and [Puppeteer](https://www.npmjs.com/package/puppeteer). Data scraped from websites without coordinates was geocoded using open postcode data from [Postcodes.io](https://postcodes.io/). The scripts used to fetch and format the raw data are stored in a private repo because retrieving some of it required a little more sleuthing than I feel comfortable sharing.
 
 _No websites were harmed in the making of this one._
 
