@@ -15,6 +15,7 @@ const dataset = {
   JOJO_MAMAN_BEBE: require('../../middleclassmap.co.uk-private/data/jojoMamanBebe.json'),
   MICHELIN_AWARD: require('../../middleclassmap.co.uk-private/data/bibGourmand.json'),
   NATIONAL_TRUST: require('../../middleclassmap.co.uk-private/data/theNationalTrust.json'),
+  PETS_CORNER: require('../../middleclassmap.co.uk-private/data/petsCorner.json'),
   RHS_PARTNER_GARDEN: require('../../middleclassmap.co.uk-private/data/rhsPartnerGardens.json'),
   SPACE_NK: require('../../middleclassmap.co.uk-private/data/spaceNK.json'),
   SWEATY_BETTY: require('../../middleclassmap.co.uk-private/data/sweatyBetty.json'),

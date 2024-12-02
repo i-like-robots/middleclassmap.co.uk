@@ -6,6 +6,7 @@ const groupNames = {
   JOJO_MAMAN_BEBE: 'JoJo Maman Bébé',
   MICHELIN_AWARD: 'Restaurant with Michelin Award',
   NATIONAL_TRUST: 'National Trust Property',
+  PETS_CORNER: 'Pets Corner',
   RHS_PARTNER_GARDEN: 'RHS Partner Garden',
   SPACE_NK: 'Space NK',
   SWEATY_BETTY: 'Sweaty Betty',
@@ -21,6 +22,7 @@ const showGroupName = {
   JOJO_MAMAN_BEBE: false,
   MICHELIN_AWARD: true,
   NATIONAL_TRUST: true,
+  PETS_CORNER: true,
   RHS_PARTNER_GARDEN: true,
   SPACE_NK: false,
   SWEATY_BETTY: false,
@@ -52,9 +54,10 @@ const groupSortOrder = {
   INDEPENDENT_CINEMA: 7,
   MICHELIN_AWARD: 2,
   COTE_BRASSERIE: 8,
-  RHS_PARTNER_GARDEN: 9,
-  NATIONAL_TRUST: 10,
-  FARM_SHOP: 11,
+  PETS_CORNER: 9,
+  RHS_PARTNER_GARDEN: 10,
+  NATIONAL_TRUST: 11,
+  FARM_SHOP: 12,
 }
 
 const groupImages = {
@@ -65,6 +68,7 @@ const groupImages = {
   JOJO_MAMAN_BEBE: 'jojo.png',
   MICHELIN_AWARD: 'bib.png',
   NATIONAL_TRUST: 'nationaltrust.png',
+  PETS_CORNER: 'petscorner.png',
   RHS_PARTNER_GARDEN: 'rhs.png',
   SPACE_NK: 'spacenk.png',
   SWEATY_BETTY: 'sweatybetty.png',
