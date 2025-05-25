@@ -2,7 +2,7 @@
 
 The source code for the website [middleclassmap.co.uk](https://www.middleclassmap.co.uk).
 
-After reading about middle class city dwellers dreams of moving away from the pandemic ridden streets in search of the good life in [The Guardian][1] and [Financial Times][2] I thought it would be interesting to map out their potential destinations.
+After reading about middle class city dwellers dreams of moving away from the pandemic ridden streets in search of the good life in [The Guardian][1] and [Financial Times][2] during 2020, I thought it would be interesting to map out their potential destinations.
 
 This website combines and presents the location data for a number of popular middle class haunts, from trendy independent boutiques to salt of the earth farm shops. Data is presented as a heatmap (with each point adjusted for population density) at low zoom levels and as a pin board at high zoom levels.
 
@@ -13,18 +13,20 @@ This website combines and presents the location data for a number of popular mid
 
 All data displayed on this website is in the public domain and was extracted from the following sources:
 
-- [Michelin Guide](https://guide.michelin.com/gb/en/restaurants)
 - [Côte Brasserie](https://www.cote.co.uk/directory/)
 - [Fabulous Farm Shops](http://www.fabulousfarmshops.co.uk/)
+- [Gail's Bakery](https://gails.com/pages/find-us)
 - [Independent Cinema Office](https://www.independentcinemaoffice.org.uk/)
 - [John Lewis](https://www.johnlewis.com/our-shops)
-- [JoJo Maman Bébé](https://www.jojomamanbebe.co.uk/stores)
+- [JoJo Maman Bébé](https://www.jojomamanbebe.co.uk/storelocator)
+- [Michelin Guide](https://guide.michelin.com/gb/en/restaurants)
+- [Pets Corner](https://www.petscorner.co.uk/store-locator/)
 - [Royal Horticultural Society](https://www.rhs.org.uk/gardens/partner-gardens)
 - [Space NK](https://www.spacenk.com/uk/en_GB/stores.html)
 - [Sweaty Betty](https://www.sweatybetty.com/shop-finder)
 - [The National Trust](https://www.nationaltrust.org.uk/search)
 - [The White Company](https://www.thewhitecompany.com/uk/our-stores/)
-- [Trouva](https://www.trouva.com/boutiques/locations/GB)
+- [Trouva](https://www.trouva.com/boutiques)
 
 Different techniques were used to scrape data from each source, primarily using a combination of [Node](https://nodejs.org/), [Cheerio](https://www.npmjs.com/package/cheerio), and [Puppeteer](https://www.npmjs.com/package/puppeteer). Data scraped from websites without coordinates was geocoded using open postcode data from [Postcodes.io](https://postcodes.io/). The scripts used to fetch and format the raw data are stored in a private repo because retrieving some of it required a little more sleuthing than I feel comfortable sharing.
 
