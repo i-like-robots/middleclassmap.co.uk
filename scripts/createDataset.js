@@ -10,6 +10,7 @@ const loadPopulationData = require('./lib/loadPopulationData')
 const dataset = {
   COTE_BRASSERIE: require('../../middleclassmap.co.uk-private/data/coteBrasserie.json'),
   FARM_SHOP: require('../../middleclassmap.co.uk-private/data/farmShops.json'),
+  GAILS: require('../../middleclassmap.co.uk-private/data/gails.json'),
   INDEPENDENT_CINEMA: require('../../middleclassmap.co.uk-private/data/independentCinemas.json'),
   JOHN_LEWIS: require('../../middleclassmap.co.uk-private/data/johnLewis.json'),
   JOJO_MAMAN_BEBE: require('../../middleclassmap.co.uk-private/data/jojoMamanBebe.json'),

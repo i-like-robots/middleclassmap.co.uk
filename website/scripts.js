@@ -1,6 +1,7 @@
 const groupNames = {
   COTE_BRASSERIE: 'Côte Brasserie',
   FARM_SHOP: 'Farm Shop',
+  GAILS: 'Gailʼs Bakery',
   INDEPENDENT_CINEMA: 'Independent Cinema',
   JOHN_LEWIS: 'John Lewis',
   JOJO_MAMAN_BEBE: 'JoJo Maman Bébé',
@@ -17,6 +18,7 @@ const groupNames = {
 const showGroupName = {
   COTE_BRASSERIE: false,
   FARM_SHOP: true,
+  GAILS: true,
   INDEPENDENT_CINEMA: true,
   JOHN_LEWIS: false,
   JOJO_MAMAN_BEBE: false,
@@ -47,6 +49,7 @@ const showGroupName = {
 const groupSortOrder = {
   JOHN_LEWIS: 0,
   TROUVA_BOUTIQUE: 1,
+  GAILS: 2,
   THE_WHITE_COMPANY: 3,
   SWEATY_BETTY: 4,
   SPACE_NK: 5,
@@ -63,6 +66,7 @@ const groupSortOrder = {
 const groupImages = {
   COTE_BRASSERIE: 'cote.png',
   FARM_SHOP: 'farm.png',
+  GAILS: 'gails.png',
   INDEPENDENT_CINEMA: 'ico.png',
   JOHN_LEWIS: 'johnlewis.png',
   JOJO_MAMAN_BEBE: 'jojo.png',
